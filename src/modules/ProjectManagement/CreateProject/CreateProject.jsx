@@ -152,7 +152,7 @@ export default function CreateProject() {
           control={control}
           render={({ field }) => (
             <Editor
-              apiKey="no-api-key"
+              apiKey="3lutvcgxcwjl4zwl3ut2b32ktcb1065t3tnzbxuue2gt4wf3"
               onEditorChange={field.onChange}
               value={field.value}
               init={{
