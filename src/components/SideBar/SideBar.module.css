@@ -1,0 +1,65 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa; /* nền trắng sáng, nhẹ nhàng */
+  border-right: 1px solid #e1e1e1; /* viền nhẹ bên phải */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.toolbar {
+  min-height: 64px;
+}
+
+.divider {
+  margin: 0 16px;
+  border-color: #e1e1e1;
+}
+
+.listItemButton {
+  border-left: 4px solid transparent;
+  color: #333;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding-left: 20px !important;
+  border-radius: 8px 0 0 8px;
+}
+
+.listItemButton:hover {
+  background-color: #f0f5ff;
+  color: #0071e3;
+  border-left-color: #0071e3;
+  box-shadow: inset 4px 0 6px -1px rgba(0, 113, 227, 0.3);
+}
+
+.active {
+  color: #0071e3 !important;
+  font-weight: 700;
+  background: linear-gradient(90deg, rgba(0, 113, 227, 0.15), rgba(0, 113, 227, 0.05));
+  border-left-color: #0071e3 !important;
+  box-shadow: inset 4px 0 8px -2px rgba(0, 113, 227, 0.6);
+  cursor: default;
+}
+
+.listItemButton:hover.active {
+  background: linear-gradient(90deg, rgba(0, 113, 227, 0.25), rgba(0, 113, 227, 0.1));
+  box-shadow: inset 6px 0 10px -3px rgba(0, 113, 227, 0.8);
+}
+
+.listItemIcon {
+  color: inherit;
+  min-width: 36px;
+  transition: color 0.3s ease;
+}
+
+.listItemText {
+  font-size: 1rem;
+  user-select: none;
+  white-space: nowrap;
+}
+
+/* Disabled Project Detail button style */
+.Mui-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

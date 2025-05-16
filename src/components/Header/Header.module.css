@@ -1,0 +1,91 @@
+.appBar {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  box-shadow: none !important;
+}
+
+.toolbar {
+  min-height: 56px !important;
+  padding-left: 16px !important;
+  padding-right: 24px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.menuButton {
+  color: #0052cc !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.menuButton:hover {
+  background-color: rgba(0, 82, 204, 0.1) !important;
+}
+
+.logo {
+  width: 90px !important;
+  height: auto !important;
+  cursor: pointer !important;
+  filter: drop-shadow(0 0 1px rgba(0, 82, 204, 0.6));
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.userContainer {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+}
+
+.avatar {
+  width: 36px !important;
+  height: 36px !important;
+  cursor: pointer !important;
+  box-shadow: 0 0 5px rgba(0, 82, 204, 0.4);
+  border-radius: 50% !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+.logoutButton {
+  color: #0052cc !important;
+  transition: background-color 0.2s ease-in-out !important;
+}
+
+.logoutButton:hover {
+  background-color: rgba(0, 82, 204, 0.1) !important;
+}
+
+.authContainer {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #0052cc !important;
+  user-select: none !important;
+}
+
+.authLink {
+  cursor: pointer !important;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.authLink:hover {
+  text-decoration: underline !important;
+}
+
+.authDivider {
+  width: 1px !important;
+  height: 20px !important;
+  background-color: #ccc !important;
+}

@@ -1,0 +1,216 @@
+/* DialogAddMember.module.css */
+.dialogContainer {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Inter', sans-serif;
+  max-width: 600px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.dialogTitle {
+  padding: 16px 24px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: #ffffff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.dialogContent {
+  padding: 20px 24px;
+}
+
+.searchField {
+  margin-bottom: 16px;
+}
+
+.searchField input {
+  font-size: 0.95rem;
+  color: #2d3748;
+}
+
+.searchField label {
+  color: #6a11cb;
+  font-weight: 500;
+}
+
+.searchField .MuiInput-underline:after {
+  border-bottom-color: #6a11cb;
+}
+
+.userList {
+  max-height: 50vh;
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #6a11cb #f1f5f9;
+}
+
+.userList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.userList::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 3px;
+}
+
+.userList::-webkit-scrollbar-thumb {
+  background: #6a11cb;
+  border-radius: 3px;
+}
+
+.userItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 8px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.userItem:hover {
+  background: #f1f5f9;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.userItem::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: #6a11cb;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.userItem:hover::before {
+  opacity: 1;
+}
+
+.userAvatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border: 2px solid #6a11cb;
+  transition: transform 0.3s ease;
+}
+
+.userItem:hover .userAvatar {
+  transform: scale(1.1);
+}
+
+.userName {
+  font-size: 0.95rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.dialogActions {
+  padding: 12px 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cancelButton {
+  border-radius: 8px;
+  text-transform: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #2d3748;
+  border-color: #d1d5db;
+  padding: 6px 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.cancelButton:hover {
+  background: #f1f5f9;
+  border-color: #6a11cb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancelButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(106, 17, 203, 0.2);
+  transition: left 0.3s ease;
+}
+
+.cancelButton:hover::before {
+  left: 100%;
+}
+
+.snackbar {
+  font-family: 'Inter', sans-serif;
+}
+
+.alert {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 12px 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alertSuccess {
+  background: linear-gradient(90deg, #2f855a 0%, #48bb78 100%);
+  color: #ffffff;
+}
+
+.alertError {
+  background: linear-gradient(90deg, #b41e1e 0%, #e53e3e 100%);
+  color: #ffffff;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .dialogContainer {
+    min-width: 280px;
+    margin: 8px;
+  }
+
+  .dialogTitle {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+  }
+
+  .dialogContent {
+    padding: 16px;
+  }
+
+  .userItem {
+    padding: 10px 12px;
+  }
+
+  .userName {
+    font-size: 0.9rem;
+  }
+
+  .cancelButton {
+    font-size: 0.85rem;
+    padding: 5px 12px;
+  }
+
+  .alert {
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+}

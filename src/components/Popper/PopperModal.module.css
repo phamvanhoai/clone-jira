@@ -1,0 +1,115 @@
+.popperContainer {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  padding: 16px 24px;
+  max-width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #1c1c1e;
+  user-select: none;
+}
+
+.arrow {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: -6px;
+  left: calc(50% - 6px);
+  background: #fff;
+  transform: rotate(45deg);
+  box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.arrowDelete {
+  background-color: #ff3b30;
+  box-shadow: none;
+}
+
+.arrowAdd {
+  background-color: #34c759;
+  box-shadow: none;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.icon {
+  font-size: 28px;
+  color: #8e8e93;
+  flex-shrink: 0;
+}
+
+.iconDelete {
+  color: #ff3b30;
+}
+
+.iconAdd {
+  color: #34c759;
+}
+
+.highlightText {
+  font-weight: 600;
+  margin-left: 6px;
+  color: #1c1c1e;
+}
+
+.highlightTextAdd {
+  color: #34c759;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancelButton {
+  color: #6e6e73;
+  border-color: #d1d1d6;
+  border-radius: 8px;
+  text-transform: none;
+  font-weight: 600;
+  min-width: 80px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:hover {
+  background-color: #f2f2f7;
+  border-color: #a1a1a6;
+}
+
+.actionButton {
+  text-transform: none;
+  font-weight: 600;
+  border-radius: 8px;
+  min-width: 80px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+  box-shadow: none;
+}
+
+.actionButtonDelete {
+  background-color: #ff3b30;
+  color: white;
+}
+
+.actionButtonDelete:hover {
+  background-color: #e02c20;
+}
+
+.actionButtonAdd {
+  background-color: #34c759;
+  color: white;
+}
+
+.actionButtonAdd:hover {
+  background-color: #28a745;
+}
